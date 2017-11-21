@@ -1,6 +1,6 @@
 const SiteController = {};
 
-app.get ("/", function (req, resp){
+SiteController.index = (function (req, resp){
   const welcomeText = "welcome to Afrika's Html"
   const favoriteThings = ["reading", "coding", "fighting","teaching", "dancing"]
   const viewData = {
@@ -13,12 +13,12 @@ app.get ("/", function (req, resp){
   resp.render("index", viewData)
   })
 }
-app.get ("/about", function (req, resp){
+SiteController.about =  function (req, resp){
   resp.render ("about")
 }
-app.get ("/other", function (req, resp){
+SiteController.other = function (req, resp){
+  resp.render ("other")
 }
-
 
 
 module.exports = SiteController;
