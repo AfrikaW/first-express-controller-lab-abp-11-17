@@ -1,5 +1,5 @@
 var express = require('express')
-const SiteController = require('./controllers/SiteControler.js')
+const SiteController = require('./controllers/SiteController.js')
 var app = express()
 
 // Load Controllers
@@ -13,13 +13,3 @@ app.get ("/other", SiteController.other)
 
 
 module.exports = app
-
-
-
-
-
-
-
-
-
-
