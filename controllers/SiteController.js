@@ -1,5 +1,5 @@
 const SiteController = {};
-
+const app = require('../app.js')
 
 SiteController.index = (function (req, resp){
   const welcomeText = "welcome to Afrika's Html"
