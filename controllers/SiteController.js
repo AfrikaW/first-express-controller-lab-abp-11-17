@@ -14,6 +14,7 @@ SiteController.index = (function (req, resp){
   resp.render("index", viewData)
   })
 }
+
 SiteController.about =  function (req, resp){
   resp.render ("about")
 }
