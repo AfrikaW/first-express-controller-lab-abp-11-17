@@ -1,5 +1,5 @@
 var express = require('express')
-const siteController = require('../controllers/SiteController.js')
+const SiteController = require('../controllers/SiteController.js')
 var app = express()
 
 // Load Controllers
